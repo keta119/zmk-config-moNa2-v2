@@ -132,10 +132,10 @@
 
         win_layer {
             bindings = <
-&lt 6 Q           &kp Q         &kp Q         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G                                  &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                 &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 GRAVE  &lt 4 SPACE  &lt_to_layer_0 5 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
+&lt 6 Q         &kp Q         &kp Q         &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
+&kp A           &kp S         &kp D         &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 3 MINUS
+&kp Z           &kp X         &kp C         &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp LEFT_ALT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -143,10 +143,10 @@
 
         ipad_layer {
             bindings = <
-&lt 6 W           &kp W         &kp W         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G                                  &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                 &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 GRAVE  &lt 4 SPACE  &lt_to_layer_0 5 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
+&lt 6 W         &kp W         &kp W         &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
+&kp A           &kp S         &kp D         &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 3 MINUS
+&kp Z           &kp X         &kp C         &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp LEFT_ALT
             >;
 
             sensor-bindings = <&scroll_up_down>;
