@@ -174,12 +174,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        move_layer_5 {
+        winmove_layer_5 {
             bindings = <
-&trans     &kp LC(LS(TAB))     &kp PRINTSCREEN      &kp LC(TAB)             &trans                                                &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp LG(D)
-&trans     &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))                   &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
-&kp LC(Z)  &kp LC(X)           &kp LC(C)            &kp LC(V)               &trans                   &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
-&trans     &kp LG(L)           &kp LC(LA(DELETE))   &trans                  &trans                   &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
+&trans        &trans         &kp LA(LEFT)        &kp LA(RIGHT)  &kp LS(LG(S))                               &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp LG(D)
+&kp LG(LEFT)  &kp LG(RIGHT)  &trans              &kp LC(F)      &kp RCTRL                       &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
+&kp LC(Z)     &kp LC(X)      &kp LC(C)           &kp LC(V)      &trans         &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
+&trans        &kp LG(L)      &kp LC(LA(DELETE))  &trans         &trans         &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
