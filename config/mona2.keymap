@@ -36,11 +36,42 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        bt0: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>;
+
             label = "TO_LAYER_0";
+        };
+
+        bt1: bt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 1>;
+
+            label = "BT1";
+        };
+
+        bt2: bt2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 500>,
+                <&tog_on 2>;
+
+            label = "BT2";
         };
     };
 
@@ -48,7 +79,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&bt0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -68,7 +99,7 @@
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
-      };
+        };
 
         tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
@@ -90,26 +121,27 @@
 
         default_layer {
             bindings = <
-&lt 4 Q         &kp W         &kp E         &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
+&lt 6 Q         &kp W         &kp E         &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A           &kp S         &kp D         &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 3 MINUS
 &kp Z           &kp X         &kp C         &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG2  &lt 2 SPACE  &lt 1 LANG1    &lt 1 BACKSPACE  &lt 2 ENTER                             &kp LEFT_ALT
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp LEFT_ALT
             >;
+
             sensor-bindings = <&scroll_up_down>;
         };
 
-win_layer {
+        win_layer {
             bindings = <
-&kp Q             &kp Q         &kp Q         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
+&lt 6 Q           &kp Q         &kp Q         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                   &kp G                                  &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 4 SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                 &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 GRAVE  &lt 4 SPACE  &lt_to_layer_0 5 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
         };
 
-ipad_layer {
+        ipad_layer {
             bindings = <
-&kp W             &kp W         &kp W         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
+&lt 6 W           &kp W         &kp W         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                   &kp G                                  &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 4 SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                 &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 GRAVE  &lt 4 SPACE  &lt_to_layer_0 5 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
