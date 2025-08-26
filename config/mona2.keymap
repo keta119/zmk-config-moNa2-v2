@@ -84,7 +84,7 @@
         LOGIN: LOGIN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LANG2 &kp KP_NUMBER_5 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp LS(F) &kp I &kp R &kp E &kp LBKT &kp ENTER>;
             label = "LOGIN";
         };
 
