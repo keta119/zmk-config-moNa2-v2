@@ -165,7 +165,7 @@
             bindings = <
 &lt 6 Q         &kp W         &kp E  &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A           &kp S         &kp D  &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 7 MINUS
-&kp Z           &kp X         &kp C  &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&kp Z           &kp X         &kp C  &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp LBKT
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp A  &lt 7 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp LEFT_COMMAND
             >;
 
@@ -176,7 +176,7 @@
             bindings = <
 &lt 6 Q         &kp Q         &kp E         &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A           &kp S         &kp D         &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 5 MINUS
-&kp Z           &kp X         &kp C         &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SINGLE_QUOTE
+&kp Z           &kp X         &kp C         &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp LBKT
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp RCTRL
             >;
 
