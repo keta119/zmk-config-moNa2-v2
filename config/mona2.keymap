@@ -207,10 +207,10 @@
 
         character_layer_4 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL   &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &trans     &trans         &kp COMMA     &kp PERIOD  &trans
-&trans           &trans       &trans             &trans      &trans       &trans     &kp DEL  &trans                                              &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)
+&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &kp LS(SLASH)     &trans            &trans            &kp LA(BACKSLASH)  &kp LS(MINUS)
+&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &trans            &trans            &kp COMMA         &kp PERIOD         &trans
+&trans           &trans       &trans             &trans      &trans       &trans     &kp DEL  &trans                                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
