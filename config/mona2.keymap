@@ -112,7 +112,7 @@
         ADDTIMEDATE: ADDTIMEDATE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_SLASH &kp KP_SLASH &kp &kp &kp &kp F5 &kp &kp &kp KP_DIVIDE &kp KP_SLASH>;
+            bindings = <&kp KP_SLASH &kp KP_SLASH &kp F5 &kp KP_DIVIDE &kp KP_SLASH>;
             label = "ADDTIMEDATE";
         };
 
