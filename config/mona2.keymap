@@ -91,7 +91,7 @@
         SHOKUIN: SHOKUIN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LANGUAGE_2 &kp F &kp I &kp M &kp S &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp RET>;
             label = "SHOKUIN";
         };
 
@@ -105,15 +105,29 @@
         MENKYO: MENKYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LANGUAGE_2 &kp M &kp E &kp N &kp K &kp Y &kp O &kp RET>;
             label = "MENKYO";
         };
 
         ADDTIMEDATE: ADDTIMEDATE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp KP_SLASH &kp KP_SLASH &kp &kp &kp &kp F5 &kp &kp &kp KP_DIVIDE &kp KP_SLASH>;
             label = "ADDTIMEDATE";
+        };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LS(NUMBER_9) &kp LS(N0) &kp LEFT>;
+            label = "KAKKO";
+        };
+
+        kagikakko: kagikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT>;
+            label = "KAGIKAKKO";
         };
     };
 
@@ -208,7 +222,7 @@
         character_layer_4 {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(N5)
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &kp LS(SLASH)     &trans            &trans            &kp INTERNATIONAL_3  &kp LS(INTERNATIONAL_1)
+&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &kp LS(SLASH)     &kakko            &kagikakko        &kp INTERNATIONAL_3  &kp LS(INTERNATIONAL_1)
 &kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp LS(NUMBER_6)  &trans            &kp COMMA         &kp PERIOD           &kp LEFT_BRACKET
 &trans           &trans       &trans             &trans      &trans       &trans     &kp DEL  &trans                                                                     &trans
             >;
