@@ -254,10 +254,10 @@
 
         macmove_layer_7 {
             bindings = <
-&trans        &trans         &kp LA(LEFT)        &kp LA(RIGHT)  &kp LS(LG(S))                               &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp LG(D)
-&kp LG(LEFT)  &kp LG(RIGHT)  &trans              &kp LC(F)      &kp RCTRL                       &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
-&kp LC(Z)     &kp LC(X)      &kp LC(C)           &kp LC(V)      &trans         &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
-&trans        &kp LG(L)      &kp LC(LA(DELETE))  &trans         &trans         &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
+&trans     &trans               &kp LG(LEFT)        &kp LG(RIGHT)  &kp LS(LG(S))                               &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp F11
+&kp F11    &kp LG(RIGHT)        &trans              &kp LG(F)      &kp RCTRL                       &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
+&kp LG(Z)  &kp LG(X)            &kp LG(C)           &kp LG(V)      &trans         &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
+&trans     &kp LG(LA(C_POWER))  &kp LC(LA(DELETE))  &trans         &trans         &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
