@@ -177,13 +177,13 @@
 
         mac_layer {
             bindings = <
-&lt 6 Q         &kp W         &kp E  &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A           &kp S         &kp D  &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 7 MINUS
-&kp Z           &kp X         &kp C  &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp LBKT
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp A  &lt 7 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp LEFT_COMMAND
+&lt 6 Q         &kp W         &kp E      &kp R        &kp T                                        &kp Y        &kp U  &kp I     &kp O     &kp P
+&kp A           &kp S         &kp D      &kp F        &kp G                       &trans           &kp H        &kp J  &kp K     &kp L     &lt 7 MINUS
+&kp Z           &kp X         &kp C      &kp V        &kp B        &trans         &trans           &kp N        &kp M  &mkp MB1  &mkp MB2  &kp LBKT
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LA(A)  &lt 7 LANG2  &lt 4 SPACE  &lt 3 LANG1    &lt 3 BACKSPACE  &lt 4 ENTER                             &kp LEFT_COMMAND
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LA(LG(KP_PLUS)) LA(LG(KP_MINUS))>;
         };
 
         win_layer {
@@ -254,10 +254,10 @@
 
         macmove_layer_7 {
             bindings = <
-&trans     &trans               &kp LG(LEFT)        &kp LG(RIGHT)  &kp LS(LG(S))                               &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp F11
-&kp F11    &kp LG(RIGHT)        &trans              &kp LG(F)      &kp RCTRL                       &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
-&kp LG(Z)  &kp LG(X)            &kp LG(C)           &kp LG(V)      &trans         &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
-&trans     &kp LG(LA(C_POWER))  &kp LC(LA(DELETE))  &trans         &trans         &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
+&trans     &trans               &kp LG(LEFT)     &kp LG(RIGHT)  &kp LS(LG(N4))                                     &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp F3           &kp F11
+&kp F11    &kp LG(RIGHT)        &trans           &kp LG(F)      &kp LG(LA(KP_PLUS))                    &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
+&kp LG(Z)  &kp LG(X)            &kp LG(C)        &kp LG(V)      &kp LA(LG(KP_MINUS))  &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
+&trans     &kp LG(LA(C_POWER))  &kp LG(LA(ESC))  &trans         &trans                &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
