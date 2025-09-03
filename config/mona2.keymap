@@ -233,7 +233,7 @@
         winmove_layer_5 {
             bindings = <
 &trans        &trans         &kp LA(LEFT)        &kp LA(RIGHT)  &kp LS(LG(S))                               &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp LG(D)
-&kp LG(LEFT)  &kp LG(RIGHT)  &trans              &kp LC(F)      &kp RCTRL                       &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F3)
+&kp LG(LEFT)  &kp LG(RIGHT)  &trans              &kp LC(F)      &kp RCTRL                       &trans      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &kp LC(Z)     &kp LC(X)      &kp LC(C)           &kp LC(V)      &trans         &trans           &trans      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
 &trans        &kp LG(L)      &kp LC(LA(DELETE))  &trans         &trans         &kp BACKSPACE    &kp DELETE  &trans                                                          &trans
             >;
