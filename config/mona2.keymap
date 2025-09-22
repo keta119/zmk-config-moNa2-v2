@@ -41,9 +41,9 @@
             #binding-cells = <0>;
             bindings =
                 <&tog_off 1 &tog_off 2>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 400>,
                 <&bt BT_SEL 0>,
-                <&macro_wait_time 500>;
+                <&macro_wait_time 600>;
 
             label = "TO_LAYER_0";
         };
@@ -55,7 +55,7 @@
                 <&tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 600>,
                 <&tog_on 1>;
 
             label = "BT1";
