@@ -221,10 +221,10 @@
 
         character_layer_4 {
             bindings = <
-&kp ESCAPE      &kp AT_SIGN  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp GRAVE                            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(N5)
-&kp TAB         &kp TILDE    &kp LS(N8)             &kp LS(N9)         &kp SEMI                    &trans   &kp LS(SLASH)     &kakko            &kagikakko        &kp INTERNATIONAL_3  &kp LS(INTERNATIONAL_1)
-&trans          &trans       &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp SINGLE_QUOTE  &trans    &trans   &kp LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp COMMA         &kp PERIOD           &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &trans       &trans                 &trans             &trans            &trans    &kp DEL  &trans                                                                     &trans
+&kp ESCAPE      &kp AT_SIGN  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp GRAVE                             &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(N5)
+&kp TAB         &kp TILDE    &kp LS(N8)             &kp LS(N9)         &kp SEMI                     &trans   &kp LS(SLASH)     &kakko            &kagikakko        &kp INTERNATIONAL_3  &kp LS(INTERNATIONAL_1)
+&trans          &trans       &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp SINGLE_QUOTE   &trans    &trans   &kp LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp COMMA         &kp PERIOD           &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &trans       &trans                 &kp LC(PG_UP)      &kp LC(PAGE_DOWN)  &trans    &kp DEL  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -233,8 +233,8 @@
         winmove_layer_5 {
             bindings = <
 &kp LA(F4)    &trans         &kp LA(LEFT)        &kp LA(RIGHT)  &kp LS(LG(S))                                      &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp LG(TAB)      &kp LG(D)
-&kp LG(LEFT)  &kp LG(RIGHT)  &kp LA(O)           &kp LC(F)      &kp RCTRL                       &kp LC(PG_UP)      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)     &kp LC(X)      &kp LC(C)           &kp LC(V)      &trans         &trans           &kp LC(PAGE_DOWN)  &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
+&kp LG(LEFT)  &kp LG(RIGHT)  &kp LA(O)           &kp LC(F)      &kp RCTRL                       &kp LC(PAGE_DOWN)  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)     &kp LC(X)      &kp LC(C)           &kp LC(V)      &trans         &trans           &kp LC(PG_UP)      &kp END        &mkp MB3        &mkp MB1        &mkp MB2         &trans
 &trans        &kp LG(L)      &kp LC(LA(DELETE))  &trans         &trans         &kp BACKSPACE    &kp DELETE         &trans                                                          &trans
             >;
 
