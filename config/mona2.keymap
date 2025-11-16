@@ -129,6 +129,26 @@
             bindings = <&kp LANGUAGE_1 &kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT>;
             label = "KAGIKAKKO";
         };
+
+        bt3: bt3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 3>,
+                <&macro_wait_time 600>,
+                <&tog_on 1>;
+
+            label = "BT3";
+        };
+
+        Fire119: Fire119 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LS(F) &kp I &kp R &kp E &kp NUMBER_1 &kp KP_NUMBER_1 &kp N9 &kp MINUS &kp RET>;
+            label = "FIRE119";
+        };
     };
 
     behaviors {
@@ -212,8 +232,8 @@
             bindings = <
 &kp F1        &kp F2   &kp F3   &kp F4    &kp F5                                   &kp KP_MULTIPLY   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUM
 &kp F6        &kp F7   &kp F8   &kp F9    &kp F10                   &kp KP_DIVIDE  &kp SINGLE_QUOTE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_MINUS
-&ADDTIMEDATE  &MENKYO  &KOUSEI  &SHOKUIN  &LOGIN   &icloud          &trans         &kp KP_N1         &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_PLUS
-&trans        &trans   &trans   &trans    &trans   &kp BACKSPACE    &kp KP_DOT     &kp KP_N0                                                            &kp LS(MINUS)
+&ADDTIMEDATE  &MENKYO  &KOUSEI  &SHOKUIN  &LOGIN   &Fire119         &trans         &kp KP_N1         &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_PLUS
+&icloud       &trans   &trans   &trans    &trans   &kp BACKSPACE    &kp KP_DOT     &kp KP_N0                                                            &kp LS(MINUS)
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -243,10 +263,10 @@
 
         bt_layer6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt0         &bt1    &bt2    &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans            &bootloader  &bootloader  &trans  &trans  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans       &trans  &trans  &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                     &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                         &bt0         &bt1    &bt2    &bt3    &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans            &bootloader  &bootloader  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans       &trans  &trans  &trans  &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                               &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&scroll_right_left>;
