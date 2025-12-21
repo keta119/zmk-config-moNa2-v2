@@ -19,6 +19,9 @@ config SPI
     default y
 
 config PMW3610
+    bool "Enable PMW3610 optical sensor"
+    help
+      Enable support for the PMW3610 optical sensor (mouse sensor / tracking).
     default y
 
 endif
