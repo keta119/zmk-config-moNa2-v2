@@ -21,9 +21,17 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos { 
+        compatible = "zmk,combos"; 
+    };
 
     macros {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
+        };
         bt0: bt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -147,6 +155,22 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+ 
+        scroll_up_down: mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_right_left: mouse_wheel_right_left {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
         };
 
         tog_on: toggle_layer_on_only {
