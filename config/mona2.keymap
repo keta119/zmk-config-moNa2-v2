@@ -21,9 +21,7 @@
 };
 
 / {
-    combos { 
-        compatible = "zmk,combos"; 
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -32,6 +30,7 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
         bt0: bt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -156,7 +155,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
- 
+
         scroll_up_down: mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -207,6 +206,8 @@
 &kp Z           &kp X         &kp C         &kp V        &kp B        &kp LEFT_CONTROL    &kp LEFT_SHIFT   &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 LANG2  &lt 4 SPACE  &lt 3 LANG1         &lt 3 BACKSPACE  &lt 4 ENTER                             &kp RCTRL
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ipad_layer {
